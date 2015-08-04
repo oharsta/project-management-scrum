@@ -1,82 +1,75 @@
 @import url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
 
 body {
-    margin: 0 auto;
-    position: relative;
-    background-color: #f9f9f9;
-    font-family: 'Lato', sans-serif;
-    line-height: 1.2;
-    vertical-align: middle;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f9f9f9;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.2;
+  vertical-align: middle;
 }
-
 h4 {
-    display: inline-block;
-    text-align: center;
-    align-content: center;
-    width: 100%;
-    height: 37px;
-    background-color: #00007f;
-    color: white;
-    margin: 0px;
-    line-height: 37px;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  height: 37px;
+  background-color: #00007f;
+  color: white;
+  margin: 0px;
+  line-height: 37px;
 }
-
 .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: flex-end;
-    align-content: flex-end;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
 }
-
 .intro {
-    width: 92%;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  background-color: white;
+  padding: 20px 70px 20px 70px;
 }
-
 .card {
-    box-shadow: 0 1px 2px #aaa;
-    background: white;
-    margin: 0.6rem;
-    border-radius: 3px;
-    width: 300px;
-    height: 220px;
-    cursor: pointer;
+  box-shadow: 0 1px 2px #aaa;
+  background: white;
+  margin: 0.6rem;
+  border-radius: 3px;
+  width: 300px;
+  height: 220px;
+  cursor: pointer;
 }
-
 .card:hover {
-    box-shadow: 0 0 1em #696969;
+  box-shadow: 0 0 1em #696969;
 }
-
 .card.flipped .flip-container {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-
 .flip-container {
-    transition: 0.9s;
-    transform-style: preserve-3d;
-    position: relative;
+  transition: 0.9s;
+  transform-style: preserve-3d;
+  position: relative;
 }
-
 .pmbok, .scrum {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
 }
-
 .pmbok {
-    z-index: 2;
-    transform: rotateY(0deg);
-    left: 0;
-    /*color: #343434;*/
-
+  z-index: 2;
+  transform: rotateY(0deg);
+  left: 0;
+  color: #0D0059;
 }
-
 .scrum {
-    transform: rotateY(180deg);
-    right: 0;
-    /*color: #054d26;*/
+  transform: rotateY(180deg);
+  right: 0;
+  color: #113D02;
 }
