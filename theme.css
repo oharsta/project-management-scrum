@@ -19,6 +19,36 @@ h4 {
   margin: 0px;
   line-height: 37px;
 }
+.legend {
+  box-shadow: 0 1px 2px #aaa;
+  background: #f9f9f9;
+  border-radius: 3px;
+  width: 100px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.legend p {
+  margin: 1px;
+}
+.legend p:nth-child(1):before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  background-color: #00007f;
+  margin-right: 5px;
+}
+.legend p:nth-child(2):before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  content: "";
+  background-color: #113D02;
+  margin-right: 5px;
+}
+.card.flipped h4 {
+  background-color: #113D02;
+}
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -66,7 +96,7 @@ h4 {
   z-index: 2;
   transform: rotateY(0deg);
   left: 0;
-  color: #0D0059;
+  color: #00007f;
 }
 .scrum {
   transform: rotateY(180deg);
