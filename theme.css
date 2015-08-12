@@ -104,6 +104,7 @@ body {
 }
 
 .card.flipped .flip-container {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -122,12 +123,14 @@ body {
 
 .pmbok {
     z-index: 2;
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
     left: 0;
     color: #00007f;
 }
 
 .scrum {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     right: 0;
     color: #113D02;
